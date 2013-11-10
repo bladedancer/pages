@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Spiro</title>
+        <meta charset="utf-8">
+
+		<link href="./spiro.css" rel="stylesheet" type="text/css"/>
+		
+		<script src="./jquery.js"></script>
+		<script src="./jquery.knob.js"></script>
+		<script src="./time.js"></script>
+		<script src="./spiro.js"></script>
+   
+	</head>
+	
+    <body>
+		<div class="title boxed">
+			SPIRO
+		</div>
+		<div id="controlPanel" class="cf">
+			<form>
+				<div id="arm1" class="arm boxed">
+					<div class="knobPair cf">
+						<label for="arm1Radius">Radius</label>
+						<input id="arm1Radius" class="radius" value=""/>
+					</div>
+					<div class="knobPair cf">
+						<label for="arm1Speed">Speed</label>
+						<input id="arm1Speed" class="speed" value=""/>
+					</div>
+				</div>
+				
+				<div id="arm2" class="arm boxed">
+					<div class="knobPair cf">
+						<label for="arm2Radius">Radius</label>
+						<input id="arm2Radius" class="radius" value=""/>
+					</div>
+					<div class="knobPair cf">
+						<label for="arm2Speed">Speed</label>
+						<input id="arm2Speed" class="speed" value=""/>
+					</div>
+				</div>
+				
+				<div id="pen" class="boxed">
+					<div class="pair">
+						<label for="penColor">Pen Color</label>
+						<input id="penColor" type="color" value=""/>
+					</div>
+					<div class="pair">
+						<input id="displayApparatus" type="checkbox" />
+						<label for="displayApparatus">Display Apparatus</label>
+					</div>
+					<div class="knobPair cf">
+						<label for="pageSpeed">Rotation Speed</label>
+						<input id="pageSpeed" class="speed" value=""/>
+					</div>
+				</div>
+				
+				<div id="actions" class="boxed">
+					<input type="button" id="start" value="Start"/>
+					<input type="button" id="stop" value="Stop"/>
+					<input type="button" id="clear" value="Clear"/>
+					<input type="button" id="reset" value="Reset"/>
+					<input type="button" id="save" value="Save"/>
+				</div>
+			</form>
+		</div>
+		
+		<div id="spiro" class="cf">
+			<canvas id="spiroCanvas" width="800" height="800" >
+				<p>Get a decent browser</p>
+			</canvas>
+			<canvas id="apparatusCanvas" width="800" height="800" >
+				<p>Get a decent browser</p>
+			</canvas>
+			<img id="spiroImg"/>
+		</div>
+		
+	</body>
+</html>
