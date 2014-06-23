@@ -122,8 +122,8 @@ var spiro = (function(window, document, $, undefined) {
 			.knob({
 				fgColor : '#000',
 				width : 100,
-				min : 1,
-				max : 10,
+				min : -20,
+				max : 20,
 				displayInput : true,
 				change : function(v) {
 						pen.rotation = v;
